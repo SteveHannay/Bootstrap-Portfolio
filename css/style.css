@@ -6,7 +6,7 @@
 
 :root{
     /* Default settings */
-    --Colour_BodyBackground:rgba(222, 219, 200, 0.882);
+    --Colour_BodyBackground:rgba(148, 145, 129, 0.882);
   
     --Colour_HeaderBackground:grey;
     --Colour_Header: white;
@@ -69,65 +69,45 @@
   
 
   
-/* HEADER */
-header {
-  padding: 10px;
-  text-align: center;
-  background: var(--Colour_HeaderBackground);
-  color: var(--Colour_Header);
-}
-
-
-
-/* NAVIGATION BAR */
-
-#navbarContent{
-  justify-content: right !important;
-}
-
-#mainNav {
-  background-color: var(--Colour_NavBackground);
-  transition: all 0.35s;
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-
-#mainNav .navbar-nav > li > a {
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-#mainNav .navbar-nav > li > a,
-#mainNav .navbar-nav > li > a:focus {
-  color: var(--Colour_NavColour);
-}
-
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
-  background-color: var(Colour_NavHoverBackground);
-}
-
-
-/* HERO BANNER */
-  
-
-
-
-
-
-  
-/* FOOTER */
-footer {
-    margin: 1.5rem;
+  /* HEADER */
+  header {
+    padding: 10px;
     text-align: center;
-    font-size: 10px;
-    color: var(--Colour_Footer);
-}
-  
-  
+    background: var(--Colour_HeaderBackground);
+    color: var(--Colour_Header);
+  }
+
+
+
+  /* NAVIGATION BAR */
+
+  #navbarContent{
+    justify-content: right !important;
+  }
+
+  #mainNav {
+    background-color: var(--Colour_NavBackground);
+    transition: all 0.35s;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  #mainNav .navbar-nav > li > a {
+    font-size: 12px;
+    letter-spacing: 2px;  
+  }
+
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    color: var(--Colour_NavColour);
+  }
+
+  #mainNav .navbar-nav > li > a:hover,
+  #mainNav .navbar-nav > li > a:focus:hover {
+    background-color: var(--Colour_NavHoverBackground);
+  }
 
   
-
   
   /* WEBSITE CARDS */
   .websites-flex-container {
@@ -145,8 +125,8 @@ footer {
     background-color: white;
     border-style: solid;
     border-width: 1px;
-    border-radius: var(--Border-radius);
-    padding: 20px;
+
+    padding: 10px;
     flex: 0 0 400px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
@@ -167,34 +147,19 @@ footer {
     
   }
   
-  
+
+  /* FOOTER */
+  footer {
+    margin: 1.5rem;
+    text-align: center;
+    font-size: 14px !important;
+    color: var(--Colour_Footer);
+  }
+
+
 
   
   
-  /* SCREEN SIZING */
-  /* MEDIA */
-  
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-  @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .websites-flex-container {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the first child to grow to full width */
-    .websites-flex-container:first-child {
-      flex-grow: 1;
-    }
-  }
-  
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-    
-    .websites-flex-container {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  }
+
   
   
