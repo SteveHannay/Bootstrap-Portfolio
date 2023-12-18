@@ -5,9 +5,10 @@
 */
 
 :root{
+    /* Default settings */
     --Colour_BodyBackground:rgba(222, 219, 200, 0.882);
   
-    --Colour_HeaderBackground:red;
+    --Colour_HeaderBackground:grey;
     --Colour_Header: white;
   
     --Colour_NavBackground: #514f78;
@@ -36,7 +37,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     
-    /* set a default background colour for the entire page */
+    /* set a background colour for the entire page */
     background-color:var(--Colour_BodyBackground);
   
     /* set the entire page to a flex in column mode */
@@ -60,67 +61,73 @@
   p {
     margin: 0;
   }
-  
-  
-  /* MAIN LAYOUT */
-  header {
-    padding: 10px;
-    text-align: center;
-    background: var(--Colour_HeaderBackground);
-    color: var(--Colour_Header);
-  }
-  
-  nav {
-    display: flex;
-    background-color: var(--Colour_NavBackground);
-    justify-content: right;
-  }
-  
-  nav a {
-    color: var(--Colour_NavColour);
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
+
   section {
-  
-    padding: 14px 20px;
-  
+
+    padding: 14px 20px;  
   }
   
-  footer {
+
+  
+/* HEADER */
+header {
+  padding: 10px;
+  text-align: center;
+  background: var(--Colour_HeaderBackground);
+  color: var(--Colour_Header);
+}
+
+
+
+/* NAVIGATION BAR */
+
+#navbarContent{
+  justify-content: right !important;
+}
+
+#mainNav {
+  background-color: var(--Colour_NavBackground);
+  transition: all 0.35s;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: var(--Colour_NavColour);
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  background-color: var(Colour_NavHoverBackground);
+}
+
+
+/* HERO BANNER */
+  
+
+
+
+
+
+  
+/* FOOTER */
+footer {
     margin: 1.5rem;
     text-align: center;
     font-size: 10px;
     color: var(--Colour_Footer);
-  }
+}
   
   
-  /* POSITIONING */
+
   
-  /* display text within top-left of image within hero banner */
-  .hero-banner {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .hero-banner-top-left {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-  }
-  
-  /* used for displaying the "about" picture alongside the "about" description */
-  .about-container {
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 3fr 0fr;
-    column-gap: 5px;
-   }
-   
-  
+
   
   /* WEBSITE CARDS */
   .websites-flex-container {
