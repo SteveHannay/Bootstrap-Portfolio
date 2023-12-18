@@ -168,14 +168,7 @@ footer {
   }
   
   
-  /* EVENT HANDLING */
-  nav a:hover {
-    background-color: var(--Colour_NavHoverBackground);
-  }
-  
-  .websites-flex-container header:hover{
-    background-color: var(--Colour_WebsiteNameHoverBackground);
-  }
+
   
   
   /* SCREEN SIZING */

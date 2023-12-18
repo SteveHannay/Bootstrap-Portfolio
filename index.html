@@ -2,6 +2,7 @@
     HTML for Challenge 03 
     Developer - Steve Hannay 
     First Created - 15th December 2023
+    Based upon Bootstrap code from https://getbootstrap.com/ 
 -->
 
 <!DOCTYPE html>
@@ -64,16 +65,15 @@
 
 
   <!-- HERO BANNER -->
-
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
 
-      <h1 class="">Welcome to my Portfolio page</h1>
+      <h2 class="">Welcome to my Portfolio page</h1>
 
       <img src="./images/IMG_3748.jpg" alt="profile photo of Steven Hannay" width="200"/>
 
       <p class="lead">
-        <h2>Steven Hannay</h2>
+        <h3>Steven Hannay</h3><br />
       </p>
     
     </div>
@@ -115,35 +115,36 @@
 
       <!-- Websites -->
       <div class="websites-flex-container">
-        <section class="card" style="flex-grow: 2">  <!-- 'Website 1' card displayed at 2x Size of other cards -->
-          <header>Website 1 - My Original Portfolio</header>
-          <a href = "https://stevehannay.github.io/Challenge-2/">
-            <img src="./images/Challenge 02 - Steves Portfolio Website.png" alt="screenshot of my second webpage" height="400px"/>
-          </a>
-          <p>My second webpage (click to open)</p>
-        </section>
-        <section class="card">
-          <header>Website 2 - Horiseon</header>
-          <a href = "https://stevehannay.github.io/Challenge-1/">
-            <img src="./images/Challenge 01 - Horiseon Website.png" alt="screenshot of my first webpage" height="400px"/>
-          </a>
-          <p>My first webpage (click to open)</p>
-        </section>
-        <section class="card">
-          <header>Website 3</header>
-          <img src="./images/02-portfolio-3.jpg" alt="dummy image" />
-          <p>more coming soon....</p>
-        </section>
-        <section class="card">
-          <header>Website 4</header>
-          <img src="./images/02-portfolio-4.jpg" alt="dummy image" />
-          <p>more coming soon....</p>
-        </section>
-        <section class="card">
-          <header>Website 5</header>
-          <img src="./images/02-portfolio-1.jpg" alt="dummy image" />
-          <p>more coming soon....</p>
-        </section>
+
+        <!-- Card 1 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./images/Challenge 02 - Steves Portfolio Website.png" class="card-img-top" alt="Screenshot of my original Portfolio webpage">
+          <div class="card-body">
+            <h5 class="card-title">My original Portfolio webpage</h5>
+            <p class="card-text">This page uses only simple HTML and CSS with no Bootstrap code</p><br />
+            <a href="https://stevehannay.github.io/Challenge-2/" class="btn btn-primary">Click here to visit my page</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./images/Challenge 01 - Horiseon Website.png" class="card-img-top" alt="Screenshot of my very first work">
+          <div class="card-body">
+            <h5 class="card-title">My very first work</h5>
+            <p class="card-text">This contains very simple HTML and CSS</p><br />
+            <a href="https://stevehannay.github.io/Challenge-1/" class="btn btn-primary">Click here to visit my page</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./images/02-portfolio-3.jpg" class="card-img-top" alt="Screenshot of my original Portfolio webpage">
+          <div class="card-body">
+            <h5 class="card-title">More coming soon</h5>
+            <p class="card-text">Over the coming weeks I will be adding more links to this page</p><br />
+          </div>
+        </div>
+
       </div>
 
     </section>
