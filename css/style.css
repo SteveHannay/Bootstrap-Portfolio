@@ -6,7 +6,7 @@
 
 :root{
     /* Default settings */
-    --Colour_BodyBackground:rgba(148, 145, 129, 0.882);
+    --Colour_BodyBackground:lightgrey;
   
     --Colour_HeaderBackground:grey;
     --Colour_Header: white;
@@ -15,10 +15,10 @@
     --Colour_NavColour: white;
     --Colour_NavHoverBackground:#13293d; 
   
-    --Colour_WebsiteFlexboxBackground:rgba(222, 219, 200, 0.882);
+    --Colour_WebsiteFlexboxBackground:grey;
     --Colour_WebsiteNameHoverBackground:#13293d; 
   
-    --Colour_Footer:#514f78;
+    --Colour_Footer:white;
   
     --Border-radius: 50px;
   
@@ -34,7 +34,7 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     line-height: 1.5;
     
     /* set a background colour for the entire page */
@@ -46,7 +46,6 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-  
   }
   
   h1,
@@ -89,6 +88,7 @@
     background-color: var(--Colour_NavBackground);
     transition: all 0.35s;
     font-weight: 200;
+    
     letter-spacing: 1px;
   }
 
@@ -108,6 +108,14 @@
   }
 
   
+  /* HERO BANNER */
+  #hero-section {
+    color: var(--Colour_Header);
+    background-color: var(--Colour_HeaderBackground);
+    justify-content: flex-start;
+  }
+
+
   
   /* WEBSITE CARDS */
   .websites-flex-container {
@@ -128,8 +136,8 @@
 
     padding: 10px;
     flex: 0 0 400px;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+    
+    margin: 10px;
     text-align: center;
   }
   
@@ -146,14 +154,21 @@
     width: 100%;
     
   }
-  
+
+  /* SKILLS */
+  #list-group {
+    background-color: var(--Colour_WebsiteFlexboxBackground) !important; ; 
+  }
 
   /* FOOTER */
   footer {
-    margin: 1.5rem;
+    padding: 10px;
     text-align: center;
-    font-size: 14px !important;
-    color: var(--Colour_Footer);
+    font-size: 14px;
+
+    /* footer and nav bar share the same colour scheme */
+    background: var(--Colour_NavBackground);
+    color: var(--Colour_NavColour);
   }
 
 

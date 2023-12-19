@@ -49,9 +49,7 @@
 
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#work">Work</a>
           </li>
@@ -59,34 +57,34 @@
             <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
+        
       </div>
     </div>
   </nav>
 
 
-  <!-- HERO BANNER -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-
-      <h2 class="">Welcome to my Portfolio page</h1>
-
-      <img src="./images/IMG_3748.jpg" alt="profile photo of Steven Hannay" width="200"/>
-
-      <p class="lead">
-        <h3>Steven Hannay</h3><br />
-      </p>
-    
-    </div>
-
-  </div>
-
 
   <!-- main -->
   <main class="page-wrapper">
 
+
+    <!-- HERO BANNER -->
+    <div class="jumbotron jumbotron-fluid" id="hero-section">
+      <div class="container">
+        <h2 class="">Welcome to my Portfolio page</h1>
+        <img src="./images/IMG_3748.jpg" alt="profile photo of Steven Hannay" width="200"/>
+        <p>
+          This is what I have been learning at the Web Developer Skills Bootcamp<br />
+          Steven Hannay<br /><br />
+        </p>
+      </div>
+    </div>
 
 
     <!-- WORK -->
@@ -135,7 +133,10 @@
 
     <!-- SKILLS -->
     <section class ="page-section" id ="skills">
-      <h2>Skills I will be learning</h2>
+      <h2>Skills</h2>
+      <p>
+        These are some of the skills that I will be learning at the Skills Bootcamp 
+      </p>
       <ul class="list-group">
         <li class="list-group-item">HTML, CSS and Git</li>
         <li class="list-group-item">Javascript</li>
@@ -161,7 +162,7 @@
               I am currently studying Web Development at the Skills Bootcamp (edX / Skills for Life).<br />
               Over the coming weeks I will be creating a series of websites and adding links to them here.<br />
               As I progress through the course, the complexity and sophistication of the websites will increase.<br />
-              You can monitor my personal progress by visting the sites shown below.<br />
+              You can monitor my personal progress by visting the sites.<br />
               <br />
               Kind Regards<br />
               Steve<br />
@@ -174,15 +175,24 @@
       <h2>Contact Me</h2>
 
       <div class="container text-center">
+        <!-- Email -->
         <div class="row">
           <div class="col">
+            <div class="card" style="width: 18rem;">
             <p>Email me at Hannay.Steve@Googlemail.com</p>
+            </div>
           </div>
+          <!-- LinkedIn -->
           <div class="col">
-            <a href="https://www.linkedin.com/in/steve-hannay-68401a1b"> LinkedIn</a>
+            <div class="card" style="width: 18rem;">
+              <a href="https://www.linkedin.com/in/steve-hannay-68401a1b"> LinkedIn</a>
+            </div>
           </div>
+          <!-- GitHub -->
           <div class="col">
-            <a href="https://github.com/SteveHannay"> Github</a>
+            <div class="card" style="width: 18rem;">
+              <a href="https://github.com/SteveHannay"> Github</a>
+            </div>
           </div>
         </div>
       </div>
@@ -191,10 +201,10 @@
 
   </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>Have a good day</p> 
-    </footer>
+  <!-- FOOTER -->
+  <footer class ="footer">
+    <p>Have a good day</p> 
+  </footer>
 
   </body>
 
