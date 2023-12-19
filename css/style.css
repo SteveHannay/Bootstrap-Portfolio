@@ -62,11 +62,9 @@
   }
 
   section {
-
     padding: 14px 20px;  
   }
   
-
   
   /* HEADER */
   header {
@@ -75,7 +73,6 @@
     background: var(--Colour_HeaderBackground);
     color: var(--Colour_Header);
   }
-
 
 
   /* NAVIGATION BAR */
@@ -114,7 +111,6 @@
     background-color: var(--Colour_HeaderBackground);
     justify-content: flex-start;
   }
-
 
   
   /* WEBSITE CARDS */
@@ -155,10 +151,15 @@
     
   }
 
+
   /* SKILLS */
   #list-group {
     background-color: var(--Colour_WebsiteFlexboxBackground) !important; ; 
   }
+  
+
+  /* CONTACTS */
+
 
   /* FOOTER */
   footer {
